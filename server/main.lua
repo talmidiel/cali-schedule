@@ -1,7 +1,7 @@
+local currentDay = os.date("%d/%m/%Y")
+
 AddEventHandler('onResourceStart', function()
   for key, values in pairs(Scripts) do
-    local currentDay = os.date("%d/%m/%Y")
-      
     if currentDay == values.date then
       CreateThread(function()
         while true do
