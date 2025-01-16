@@ -10,6 +10,7 @@ AddEventHandler('onResourceStart', function()
         end
       end
 
+      currentTime = os.date("%d/%m/%Y %H:%M")
       Wait(Config.delay)
     end
   end)
